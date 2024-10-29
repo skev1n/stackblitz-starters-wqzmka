@@ -1,0 +1,137 @@
+<!-- <span class="badge badge-new">NEW</span> -->
+<!-- <span class="badge badge-new">UPDATED</span> -->
+ <!-- <span class="badge badge-comingSoon">OUTDATED</span> -->
+
+<div class="footer">
+        <div class="footer-contact">
+            <div>
+                <h4>Get in touch</h4>
+                <p class="paragraph-2">Fill out our contact form or give us a call to get in touch with us.</p>
+            </div>
+            <button onclick="window.location.href = '/pages/contact.html'" class="btn primary-btn">Contact us</button>
+        </div>
+        <div class="footer-top">
+            <div>
+                <ul>
+                    <p class="paragraph-1">Explore</p>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#section-about">About</a></li>
+                    <li><a href="/index.html#section-services">Services</a></li>
+                    <li><a href="/pages/pricing.html">Pricing</a></li>
+                    <li><a target="_blank" href="/pages/customerLogin.html">Customer Login</a><span class="badge badge-new">LOGIN</span></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="/index.html#section-blog">Blog</a></li>
+                    <li><a style="cursor: pointer;" onclick="Helpkit.show('popover')">Resource Center</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="paragraph-1">About</p>
+                <ul>
+                    <li><a href="#section-about">About</a></li>
+                    <li><a target="_blank" href="/pages/careers.html">Careers</a><span class="badge badge-new">APPLY NOW</span></li>
+                    <li><a target="_blank" href="https://bit.ly/3vCgvLh">Reviews</a></li>
+                    <li><a href="/pages/team.html">Our Team</a></li>
+                    <li><a href="/pages/partners.html">Partners</a></li>
+                    <li><a href="/pages/referral.html">Referral Program</a><span class="badge badge-new">NEW</span></li>
+                </ul>
+            </div>
+            <div>
+                <p class="paragraph-1">Services</p>
+                <ul>
+                    <li><a href="/pages/services/mowing.html">Mowing</a></li>
+                    <li><a href="/pages/services/cleanups.html">Cleanups</a></li>
+                    <li><a href="/pages/services/leafcleanups.html">Leaf Cleanups</a></li>
+                    <li><a href="/pages/services/snow.html">Snow Removal</a></li>
+                    <li><a href="/pages/services/weedtreatment.html">Weed Treatment</a><span class="badge badge-new">BOOK NOW</span></li>
+                </ul>
+            </div>
+            <div>
+                <p class="paragraph-1">Locations</p>
+                <ul>
+                    <li><a href="/index.html">Bethlehem, Pennsylvania</a></li>
+                    <!-- <li><a href="/pages/contact.html">Request a location <span class="badge badge-new">NEW</span></a></li> -->
+                </ul>
+            </div>
+            <div>
+                <p class="paragraph-1">Other</p>
+                <ul>
+                    <!-- <li><a href="#terms">Terms</a></li> -->
+                    <li><a href="/pages/companyInfo.html">Company Information</a></li>
+                    <li><a href="/pages/accessibility.html">Accessibility Statement</a></li>
+                    <li><a href="/pages/terms/terms.html">Terms & Conditions</a><span class="badge badge-new">UPDATED</span></li>
+                    <li><a href="/pages/pauseservice.html">Pause Service</a></li>
+                    <li><a href="/pages/cancelservice.html">Cancel Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <img class="logo" src="/images/BlueLogo.png" alt="Logo: Link to homepage">
+                <p class="paragraph-2">© 2024 Cam's Services Lawn Care & Landscaping LLC. • <i>Fully Insured</i></p>
+                <div class="footerOfficeHours">
+                    <h6>Office Hours</h6>
+                    <div class="footerOfficeHoursInner">
+                      <div class="footerDays">
+                        <p class="paragraph-2">Monday</p>
+                        <p class="paragraph-2">Tuesday</p>
+                        <p class="paragraph-2">Wednesday</p>
+                        <p class="paragraph-2">Thursday</p>
+                        <p class="paragraph-2">Friday</p>
+                        <p class="paragraph-2">Saturday</p>
+                        <p class="paragraph-2">Sunday</p>
+                      </div>
+                      <div class="footerHours">
+                        <p class="paragraph-2">9AM-5PM <span id="badge-monday" class="badge"></span></p>
+                        <p class="paragraph-2">9AM-5PM <span id="badge-tuesday" class="badge"></span></p>
+                        <p class="paragraph-2">9AM-5PM <span id="badge-wednesday" class="badge"></span></p>
+                        <p class="paragraph-2">9AM-5PM <span id="badge-thursday" class="badge"></span></p>
+                        <p class="paragraph-2">9AM-5PM <span id="badge-friday" class="badge"></span></p>
+                        <p class="paragraph-2">9AM-5PM <span id="badge-saturday" class="badge"></span></p>
+                        <p class="paragraph-2">9AM-5PM <span id="badge-sunday" class="badge"></span></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="footer-bottom-right">
+                <h6>Get in touch</h6>
+                <a href="tel:6106749021" class="paragraph-3"><i class="fa-solid fa-phone"></i> +1 (610) 674-9021</a>
+                <a href="mailto:cameronvaughn74@gmail.com" class="paragraph-3"><i class="fa-solid fa-envelope"></i> cameronvaughn74@gmail.com</a>
+                <p class="paragraph-3"><i class="fa-solid fa-location-dot"></i> Bethlehem, Pennsylvania</p>
+                <div class="footer-social-links">
+                    <h6>Follow us</h6>
+                    <a target="_blank" href="https://www.facebook.com/camsservicesofficial"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/camsservicesofficial/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+   </div>
+   <script>
+    function updateOfficeStatus() {
+      const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+      const today = new Date().getDay();
+      const currentTime = new Date().getHours();
+  
+      days.forEach((day, index) => {
+        const badge = document.getElementById(`badge-${day}`);
+        if (index === today) {
+          if (currentTime >= 9 && currentTime < 17) {
+            badge.textContent = 'OPEN';
+            badge.classList.add('badge-open');
+          } else {
+            badge.textContent = 'CLOSED';
+            badge.classList.add('badge-closed');
+          }
+        } else {
+          badge.textContent = '';
+          badge.classList.remove('badge-open');
+          badge.classList.remove('badge-closed');
+        }
+      });
+    }
+  
+    // Call the function initially to set the status
+    updateOfficeStatus();
+  
+    // Update the status every minute
+    setInterval(updateOfficeStatus, 60000);
+  </script>

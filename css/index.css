@@ -1,0 +1,1127 @@
+/* ================ [ HERO SECTION ] ================ */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    background-image: url(/images/bg-hero.jpg);
+    background-size: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content-left {
+    width: 55%;
+}
+
+.hero-inner h1 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+.hero-inner h1 span {
+    color: var(--primary);
+}
+
+.hero-inner .paragraph-2 {
+    color: var(--text-2);
+    margin-bottom: 1.5rem;
+}
+
+/* ================ [ ABOUT SECTION ] ================ */
+
+.about {
+    display: flex;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sectionAboutInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 12px;
+    padding: 2.5rem;
+}
+
+.sectionAboutInner img {
+    border-radius: 12px;
+}
+
+.sectionAboutLeft {
+    width: 35%;
+    margin-left: 2.5%;
+    color: var(--text);
+}
+
+.sectionAboutLeft div {
+    display: flex;
+    align-items: top;
+    gap: 1rem;
+}
+
+.sectionAboutLeft div p {color: var(--text);}
+.sectionAboutInner div a {color: var(--text);}
+
+.sectionAboutLeft h4 {margin-bottom: 1rem;}
+
+.sectionAboutLeft p {
+    line-height: 1.8em;
+    margin-bottom: 1rem;
+    color: var(--text-2);
+}
+
+/* ================ [ SERVICES SECTION ] ================ */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem 0;
+    text-decoration: left;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 4rem;
+    padding-top: 0;
+}
+
+.services .services-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.services .services-top {
+    width: 35%;
+    margin-left: 15%;
+    padding: 2.5rem;
+}
+
+.services h4,
+.services h6 {
+    color: var(--text);
+    margin-bottom: .5rem;
+}
+
+.services .card .card-inner .date {
+    margin-bottom: 1rem;
+    color: var(--text-2);
+}
+
+.services .card .card-inner .date a {
+    color: var(--primary);
+    transition: 200ms;
+}
+
+.services .card .card-inner .date a:hover {
+    transition: 200ms;
+}
+
+.services .paragraph-2 {
+    line-height: 1.8em;
+    margin-bottom: 1rem;
+    color: var(--text-2);
+}
+
+.services .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-inner);
+    width: 420px;
+}
+
+.services .card img {
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.services .card .card-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: fit-content;
+    padding: 2rem;
+}
+
+.services .card .card-inner button {
+    width: fit-content !important;
+}
+
+/* ================ [ WELCOME SECTION ] ================ */
+
+.sectionWelcome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 5% 0;
+}
+
+.sectionWelcomeCardInner .paragraph-3 {
+    color: var(--text-2);
+}
+
+.sectionWelcomeCardInner a {
+    color: var(--primary) !important;
+    font-weight: 600;
+}
+
+.sectionWelcome .sectionWelcomeTop {
+    margin: 3% 0;
+    text-align: center;
+}
+
+.sectionWelcome .sectionWelcomeInner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sectionWelcome h4,
+.sectionWelcome h6 {
+    color: var(--text);
+    margin-bottom: .5rem;
+}
+
+.sectionWelcome .paragraph-2 {
+    line-height: 1.8em;
+    margin-bottom: 1rem;
+    color: var(--text-2);
+}
+
+.sectionWelcome .sectionWelcomeCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-inner);
+    width: 420px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.sectionWelcome .sectionWelcomeCard img {
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.sectionWelcome .sectionWelcomeCard .sectionWelcomeCardInner {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: fit-content;
+    padding: 2rem;
+}
+
+.sectionWelcome .sectionWelcomeCard .sectionWelcomeCardInner button {
+    width: fit-content !important;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.modalContent {
+    background-color: var(--text);
+    margin: 5% auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.modalContent .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: .3rem 0;
+}
+
+.close {
+    color: var(--text-2);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Slideshow styles */
+.slideshow {
+    display: block;
+}
+
+.slide {
+    display: none;
+    align-items: center;
+}
+
+.slide .content {
+    text-align: left;
+    margin: 0 2rem;
+    font-size: 12px;
+}
+
+.slide img {
+    width: 75%;
+    border: none;
+    border-radius: 6px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: var(--text-2);
+    margin: 1rem 0;
+    height: .5rem;
+    border: none;
+    border-radius: 12px;
+}
+
+.progress {
+    height: .5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--primary);
+    width: 0;
+}
+
+/* ================ [ FOOTER SECTION ] ================ */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    background-color: var(--background-color);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    padding: 2.5rem 0;
+}
+
+.footer-top ul {
+    list-style: none;
+}
+
+.footer-top .paragraph-1 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+.footer-top li a {
+    color: var(--text-2);
+    font-size: 14px;
+    margin: .3rem 0;
+    transition: 200ms;
+}
+
+.footer-top li a:hover {
+    color: var(--primary) !important;
+    transition: 200ms;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: 0 15%;
+    padding: 2.5rem;
+}
+
+.footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--text-2);
+}
+
+.footer-bottom-left .paragraph-2 {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-bottom-left .footer-social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-bottom-left .footer-social-links .paragraph-2 {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-social-links .fa-brands {
+    background-color: #316FF6;
+    padding: .5rem;
+    border-radius: .3rem;
+    color: var(--text);
+    font-size: 18px;
+    transition: 200ms;
+}
+
+.footer-social-links .fa-brands:hover {border: transparent !important;}
+
+.footer-social-links .fa-facebook-f {background-color: #316FF6;}
+.footer-social-links .fa-instagram {background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);}
+
+.footer-bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-bottom-right a,
+.footer-bottom-right p {
+    color: var(--text-2);
+    width: fit-content;
+}
+
+.footer-bottom-right .fa-solid {margin-right: .5rem;}
+
+.footer hr {
+    margin: .5rem 0;
+    width: 100%;
+    border: 1px solid var(--hr);
+    border-radius: 24px;
+}
+
+.footer h6 {
+    color: var(--text);
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.footer-contact h4 {color: var(--text);}
+.footer-contact .paragraph-2 {color: var(--text-2);}
+
+.footerOfficeHours {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 50%;
+    gap: .5rem;
+}
+
+.footerOfficeHoursInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--background-color);
+}
+
+/* ================ [ PAGE DEFAULT ] ================ */
+
+.page {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: var(--text);
+    margin-top: 7%;
+}
+
+.pageTop {
+    background-color: var(--background-color-inner);
+    color: var(--text);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 5%;
+}
+
+.pageInner {width: 50%;}
+.accesspageInneribilityInner span {color: var(--text-2);}
+.page b {color: var(--text); font-weight: 600;}
+.page a {color: var(--primary); transition: 200ms; font-weight: 600;}
+.page a:hover {color: var(--primary); transition: 200ms;}
+
+.page h4 {
+    margin: 1rem 0;
+    line-height: 1.75em;
+    font-size: 32px;
+    text-align: center;
+}
+
+.page h4 > span {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: .7rem;
+    border-radius: 12px;
+}
+
+.page h6 {margin-bottom: 1rem;}
+
+.page .pageContent div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.page .pageContent div button {
+    width: 50%;
+}
+
+.page .paragraph-2 {color: var(--text); line-height: 1.7em;}
+.page .paragraph-3 {color: var(--text-2); line-height: 1.7em;}
+
+.page .socialShareButton,
+.page #shareLinkButton {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.page .facebook {background-color: var(--facebook);}
+.page .messages {background-color: var(--messages);}
+.page .mail {background-color: var(--mail);}
+.page .link {background-color: var(--hr);}
+
+/* ================ [ TESTIMONIALS SECTION ] ================ */
+
+.testimonialsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: var(--background-color-inner);
+}
+
+.testimonialsSectionInner {
+    text-align: center;
+    width: fit-content;
+}
+
+.testimonialsSectionInnerTop {text-align: center;}
+
+.testimonialsSectionInnerTop h4 {color: var(--text); margin-bottom: 1.5rem;}
+.testimonialsSectionInnerTop .paragraph-2 {color: var(--text-2);}
+
+.testimonialsSectionInnerBottom {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 2.5rem;
+}
+
+.testimonialsSectionInnerBottom .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    color: var(--text);
+}
+
+.testimonialsSectionInnerBottom .card .reviewInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: .5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.testimonialsSectionInnerBottom .card .reviewParagraph {
+    padding: .5rem;
+    text-align: left;
+}
+
+.testimonialsSectionInnerBottom .card .fa-circle-check {color: var(--primary);}
+.testimonialsSectionInnerBottom .card .reviewLocation {color: var(--text-2) !important; font-size: 12px;}
+.testimonialsSectionInnerBottom .card .reviewInfoTop {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: left;
+}
+
+.testimonialsSectionInnerBottom .card .reviewLink {
+    width: fit-content;
+}
+
+.testimonialsSectionInnerBottom .card .paragraph-2 {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.testimonialsSectionInnerBottom .card .fa-star {
+    color: var(--color-yellow);
+}
+
+.testimonialsSectionInner a {
+    color: var(--text);
+}
+
+.testimonialsSectionInner .fa-chevron-right {
+    margin-left: .3rem;
+    font-size: 11px;
+}
+
+/* ================ [ WHY CHOOSE US SECTION ] ================ */
+
+.chooseUsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.chooseUsSectionInner {
+    text-align: center;
+    width: fit-content;
+}
+
+.chooseUsSectionInnerTop {text-align: center;}
+
+.chooseUsSectionInnerTop h4 {color: var(--text); margin-bottom: 1rem;}
+.chooseUsSectionInnerTop .paragraph-2 {color: var(--text-2);}
+
+.chooseUsSectionInnerBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseUsSectionInnerBottom .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    width: 275px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    color: var(--text);
+}
+
+.chooseUsSectionInnerBottom .card .fa-solid {
+    font-size: 32px;
+}
+
+.chooseUsSectionInnerBottom .card .paragraph-1 {
+    font-size: 18px;
+}
+
+.chooseUsSectionInnerBottom .card .paragraph-2 {
+    font-size: 14px;
+    color: var(--text-2);
+}
+
+.chooseUsSectionInnerBottom .card .fa-file-signature {color: var(--badge-color-2);}
+.chooseUsSectionInnerBottom .card .fa-location-dot {color: var(--primary);}
+.chooseUsSectionInnerBottom .card .fa-star {color: var(--color-yellow);}
+
+/* ================ [ MOWING SECTION ] ================ */
+
+.sectionMowing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    margin: 7% 0;
+    height: max-content;
+}
+
+.sectionMowingInner {
+    margin: 0 35%;
+}
+
+.sectionMowingInner h4 {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.sectionMowingInner hr {
+    width: 25%;
+    margin: 1.5rem 0;
+}
+
+.sectionMowingInner .paragraph-3 {
+    color: var(--text-2);
+    line-height: 1.7em;
+}
+
+.sectionMowingInner div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.sectionMowingInner div button {
+    width: 50%;
+}
+
+/* ================ [ CLEANUPS SECTION ] ================ */
+
+.sectionCleanups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    margin: 7% 0;
+    margin-bottom: 2rem;
+    height: max-content;
+}
+
+.sectionCleanupsInner {
+    margin: 0 35%;
+}
+
+.sectionCleanupsInner h4 {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.sectionCleanupsInner hr {
+    width: 25%;
+    margin: 1.5rem 0;
+}
+
+.sectionCleanupsInner .paragraph-3 {
+    color: var(--text-2);
+    line-height: 1.7em;
+}
+
+.sectionCleanupsInner div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.sectionCleanupsInner div button {
+    width: 50%;
+}
+
+/* ================ [ LEAF CLEANUPS SECTION ] ================ */
+
+.sectionLeafCleanups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    margin: 7% 0;
+    height: max-content;
+}
+
+.sectionLeafCleanupsInner {
+    margin: 0 35%;
+}
+
+.sectionLeafCleanupsInner h4 {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.sectionLeafCleanupsInner hr {
+    width: 25%;
+    margin: 1.5rem 0;
+}
+
+.sectionLeafCleanupsInner .paragraph-3 {
+    color: var(--text-2);
+    line-height: 1.7em;
+}
+
+.sectionLeafCleanupsInner div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.sectionLeafCleanupsInner div button {
+    width: 50%;
+}
+
+/* ================ [ SNOW SECTION ] ================ */
+
+.sectionSnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    margin: 7% 0;
+    height: max-content;
+}
+
+.sectionSnowInner {
+    margin: 0 35%;
+}
+
+.sectionSnowInner h4 {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.sectionSnowInner hr {
+    width: 25%;
+    margin: 1.5rem 0;
+}
+
+.sectionSnowInner .paragraph-3 {
+    color: var(--text-2);
+    line-height: 1.7em;
+}
+
+.sectionSnowInner div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.sectionSnowInner div button {
+    width: 50%;
+}
+
+/* ================ [ COMPANY INFORMATION ] ================ */
+
+.companyInfo {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: var(--text);
+    margin-top: 5%;
+}
+
+.companyInfo a {
+    color: var(--text);
+}
+
+.companyInfo h4 {
+    margin: 1rem 0;
+    font-size: 24px;
+}
+
+.companyInfo .paragraph-1 {margin: 1rem 0;}
+
+/* ================ [ ACCESSIBILITY INFORMATION ] ================ */
+
+.accessibility {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: var(--text);
+    margin-top: 5%;
+}
+
+.accessibilityInner {width: 50%;}
+.accessibilityInner span {color: var(--text-2);}
+.accessibility b {color: var(--text);}
+.accessibility a {color: var(--text); transition: 200ms;}
+.accessibility a:hover {color: var(--primary); transition: 200ms;}
+
+.accessibility h4 {
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    text-align: center;
+}
+
+.accessibility h4 > span {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: .7rem;
+    border-radius: 12px;
+}
+
+.accessibility .paragraph-1 {margin: 1rem 0;}
+
+/* ================ [ TEAM MEMBERS ] ================ */
+
+.teamMembers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.teamCard {
+    background-color: var(--background-color-inner);
+    border-radius: 12px;
+}
+
+.teamMembers img {
+    width: 165px;
+    border-radius: 12px;
+}
+
+.teamMemberInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.teamMemberInfo .role {
+    padding: .3rem;
+    border: none;
+    border-radius: 3px;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.teamMemberInfo .ceo {background-color: rgba(255, 215, 14, 0.543);}
+.teamMemberInfo .teamMember {background-color: var(--primary);}
+
+/* ================ [ FAQ SECTION ] ================ */
+
+.py-60 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5% 0;
+    color: white;
+}
+
+.py-60 .container .container-inner {text-align: center;}
+
+.py-60 .container .container-inner h4 {color: var(--text); margin-bottom: 1.5rem;}
+.py-60 .container .container-inner .paragraph-2 {color: var(--text-2); margin-bottom: 2rem;}
+
+.accordion {
+    background-color: var(--background-color-inner);
+    padding: .5rem;
+    border-radius: 6px;
+    width: 600px;
+    max-width: 600px;
+    margin: 1rem 0;
+}
+
+.accordion .question-wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: .5rem 0;
+    background-color: var(--background-color-inner);
+    padding: 1rem 2rem;
+    width: 100%;
+    transition: 200ms;
+}
+
+.accordion .question-wrapper-inner:hover {
+    background-color: var(--background-color);
+    transition: 200ms;
+}
+
+.accordion .answer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 6px;
+    margin: .5rem 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    color: var(--text-2);
+}
+
+.accordion .answer span {
+    color: var(--text);
+}
+
+.accordion .answer a {
+    color: var(--text);
+    transition: 200ms;
+}
+
+.accordion .answer a > .fa-chevron-right {
+    font-size: 11px;
+}
+
+.accordion .answer a:hover {
+    color: var(--primary);
+    transition: 200ms;
+}
+
+.accordion .answer .video {
+    width: 100%;
+    border-radius: 6px;
+    height: auto;
+}
+
+/* ================ [ GALLERY ] ================ */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.galleryTop {text-align: center;}
+
+.galleryTop h4 {color: var(--text); margin-bottom: 1.5rem;}
+.galleryTop .paragraph-2 {color: var(--text-2);}
+
+.gallery .gallery__image {
+    filter: grayscale(1);
+}
+
+.galleryBottom {
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.galleryBottomLink {color: var(--primary);}
+  
+.gallery:hover .gallery__image {
+    filter: grayscale(1);
+}
+  
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+  
+.gallery__link {
+    margin: 2px;
+    overflow: hidden;
+}
+  
+.gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+}
+  
+.gallery__link:hover .gallery__caption {
+    opacity: 1;
+}
+  
+.gallery__thumb {
+    position: relative;
+}
+  
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+  
+.gallery__image:hover {
+    transform: scale(1.1);
+}
+
+/* ================ [ PARTNERS ] ================ */
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+}
+
+.partnersInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+    padding: 1rem;
+    border: 2px solid var(--cressman-orange);
+    margin: 1rem;
+}
+
+.partners .card img {width: 225px;}
+.partners .card b {color: var(--cressman-orange);}
+.partners .card .cardInner button {width: 75%; background-color: var(--cressman-orange);}
+
+.partners .card .cardInner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.partners .card .cardInner h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+}

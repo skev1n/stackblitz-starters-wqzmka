@@ -1,0 +1,472 @@
+/* Hamburger Menu Icon */
+.hamburger-icon {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .hamburger-icon {
+        display: block; /* Show only on tablet and mobile */
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 105; /* Above other elements */
+    }
+}
+
+@media (max-width: 1023px) {
+
+    /* ================ [ NAV SECTION ] ================ */
+
+    nav {
+        display: none;
+    }
+
+    #scroll-progress {
+        top: 0;
+        height: 2px;
+        border-radius: 6px;
+    }
+
+    .navMobile {
+        display: block;
+        position: fixed; /* Make it stick to the top */
+        top: 0; /* Align to the top */
+        width: 100%; /* Ensure it spans the full width */
+        z-index: 100; /* Keep it above other content */
+        background: rgba(0, 0, 0, 0.995); /* Optional: Match the background with your nav */
+    }
+
+    /* ================ [ HERO SECTION ] ================ */
+
+    .hero {
+        height: 80vh;
+        padding: 12% 0;
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12%;
+    }
+
+    .hero-inner .content-left {
+        width: 80%;
+        text-align: center;
+        margin-top: 12%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .hero-inner .content-left button {
+        width: 90%;
+    }
+
+    .hero-inner .content-left h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .hero-inner .content-left .paragraph-2 {line-height: 2rem;}
+
+    .modal {
+        width: 100% !important;
+        height: 100%;
+        overflow: auto;
+        background-color: white !important;
+        padding: 10%;
+      }
+      
+      .modal-content {
+        position: relative;
+        width: 100% !important;
+        background-color: white;
+      }
+
+    /* ================ [ ABOUT SECTION ] ================ */
+
+    .about {padding: 0;}
+
+    .sectionAboutInner {
+        flex-direction: column;
+        text-align: center; /* Center-align the text */
+        border-radius: 0;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .sectionAboutLeft {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 1rem !important; /* Space between text and image */
+        margin: 0;
+    }
+
+    .sectionAboutLeft .paragraph-2 {display: none;}
+
+    .sectionAboutLeft .mobile-description {
+        display: block !important;
+    }
+
+    .sectionAboutInner img {
+        width: 100%; /* Adjust width as needed */
+        display: block;
+        margin: auto; /* Center the image */
+    }
+
+    .sectionAboutInner .sectionAboutLeft button {
+        width: 75%;
+        margin: 2.5rem 0;
+    }
+
+    /* ================ [ SERVICES SECTION ] ================ */
+
+    .services .services-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .services .services-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .services .card {width: 100%;}
+
+    .services .card .card-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services .card .card-inner hr {width: 35%;}
+    .services .card .card-inner button {width: 75%;}
+    .services .card .card-inner h6 {font-size: 34px;}
+
+    /* ================ [ SERVICES SECTION (THANK YOU PAGE) ] ================ */
+
+    .services-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .services-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .card {width: 100%;}
+
+    .card .card-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .card .card-inner hr {width: 35%;}
+    .card .card-inner button {width: 75%;}
+    .card .card-inner h6 {font-size: 34px;}
+
+    /* ================ [ FOOTER SECTION ] ================ */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer .footer-top ul {
+        margin: 2rem 0;
+    }
+
+    .footer-top li a {
+        font-size: 16px;
+    }
+
+    .footer .footer-bottom .logo {
+        align-self: center;
+        width: 165px;
+        height: fit-content;
+    }
+
+    .footer .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .footer-bottom .footer-social-links {
+        display: none;
+    }
+
+    .footer .footer-bottom .footer-bottom-right {
+        margin: 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {flex-direction: column; 
+        text-align: center; 
+    }
+
+    .footer-contact h4 {
+        font-size: 28px;
+    }
+
+    .footer-contact .paragraph-2 {
+        margin: .5rem 0;
+        font-size: 16px;
+    }
+
+    .footer-contact button {
+        width: 75%;
+        margin: 1.5rem 0;
+    }
+
+    .footerOfficeHours {
+        width: 100%;
+    }
+
+    /* ================ [ TESTIMONIALS SECTION ] ================ */
+
+    .testimonialsSection {
+        padding: 5%;
+    }
+    .testimonialsSectionInnerBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ================ [ PRICING SUMMARY SECTION ] ================ */
+
+    .sectionPricingSummary {
+        width: 100%;
+        padding: 2.5rem;
+        margin: 7% 0;
+        height: max-content;
+    }
+
+    .sectionPricingSummaryInner {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ================ [ MOWING SECTION ] ================ */
+
+    .sectionMowing {
+        width: 100%;
+        padding: 2.5rem;
+        margin: 7% 0;
+        height: max-content;
+    }
+    
+    .sectionMowingInner {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ================ [ CLEANUPS SECTION ] ================ */
+
+    .sectionCleanups {
+        width: 100%;
+        padding: 2.5rem;
+        margin: 7% 0;
+        height: max-content;
+    }
+    
+    .sectionCleanupsInner {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ================ [ LEAF CLEANUPS SECTION ] ================ */
+
+    .sectionLeafCleanups {
+        width: 100%;
+        padding: 2.5rem;
+        margin: 7% 0;
+        height: max-content;
+    }
+    
+    .sectionLeafCleanupsInner {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ================ [ SNOW SECTION ] ================ */
+
+    .sectionSnow {
+        width: 100%;
+        padding: 2.5rem;
+        margin: 7% 0;
+        height: max-content;
+    }
+
+    .sectionSnowInner {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ================ [ COMPANY INFORMATION ] ================ */
+
+    .companyInfo {
+        text-align: center;
+        margin-top: 12%;
+    }
+
+    /* ================ [ ACCESSIBILITY INFORMATION ] ================ */
+
+    .accessibility {
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .accessibilityInner {width: 90%;}
+    .accessibilityInner h4 {font-size: 16px; margin-top: 5%;}
+
+    /* ================ [ TEAM MEMBERS ] ================ */
+
+    .teamCard {
+        flex-direction: column !important;
+    }
+    
+    .teamMembers img {
+        width: 100%;
+    }
+
+    /* ================ [ WHY CHOOSE US SECTION ] ================ */
+
+    .chooseUsSection {
+        padding: 5%;
+    }
+    .chooseUsSectionInnerBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ================ [ GALLERY ] ================ */
+
+    .galleryBottom {
+        flex-direction: column;
+    }
+
+    .gallery__column {
+        width: 100%;
+    }
+
+    .gallery .gallery__image {
+        filter: none !important;
+        transform: none !important;
+    }
+
+    /* ================ [ PARTNERS ] ================ */
+
+    .partners .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partners .card .cardInner button {width: 100%;}
+    .partners .card .cardInner {width: 100%;}
+
+    /* ================ [ PAGE DEFAULT ] ================ */
+
+    .page {
+        text-align: center;
+        margin-top: 30%;
+    }
+
+    .pageTop {margin-top: 10%;}
+    .pageInner {width: 85%;}
+    .page h4 {font-size: 28px; line-height: 2em;}
+
+    .banner-mobile {
+        display: block !important;
+    }
+
+    /* ================ [ WELCOME SECTION ] ================ */
+
+    .sectionWelcome {
+        padding: 20% 0;
+    }
+
+    .sectionWelcomeCardInner .paragraph-3 {
+        color: var(--text-2);
+    }
+
+    .sectionWelcome .sectionWelcomeInner {
+        flex-direction: column;
+    }
+
+    .sectionWelcome .sectionWelcomeCard .sectionWelcomeCardInner {
+        text-align: center;
+    }
+
+    .sectionWelcome .sectionWelcomeCard .sectionWelcomeCardInner hr,
+    .sectionWelcome .sectionWelcomeCard .sectionWelcomeCardInner button {
+        align-self: center !important;
+    }
+
+    /* Modal styles */
+
+    .modalContent {
+        margin: 0;
+        padding: .5rem;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .modalContent .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: .3rem 0;
+    }
+
+}
